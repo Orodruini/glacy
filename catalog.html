@@ -14,25 +14,42 @@
     <nav class="navigation-cite">
       <ul class="navigation-cite-list">
         <li class="navigation-item">
-          <select class="navigation-select">Каталог
-            <option value="new">
-              <b class="new-navigation-select">
-                <a class="new-navigation-link" href="new.html">Новинки</a>
-              </b>
-            </option>
-            <option value="creamy">
-              <a class="creamy-navigation-link" href="creamy.html">Сливочное</a>
-            </option>
-            <option value="sherbets">
-              <a class="sherbets-navigation-link" href="sherbets.html">Щербеты</a>
-            </option>
-            <option value="fruit-ice">
-              <a class="fruit-ice-navigation-link" href="fruit-ice.html">Фруктовый лед</a>
-            </option>
-            <option value="melorin">
-              <a class="melorin-navigation-link" href="melorin.html">Мелорин</a>
-            </option>
-          </select>
+          <ul class="navigation-select">
+            <li class="navigation-item-select">
+              <select class="navigation-select">
+                <option value="new">
+                  <div class="new-navigation-link" href="new.html">Каталог</div>
+                </option>
+            </li>
+            <li class="navigation-item-select">
+              <option value="new">
+                <b class="new-navigation-select">
+                  <a class="new-navigation-link" href="new.html">Новинки</a>
+                </b>
+              </option>
+            </li>
+            <li class="navigation-item-select">
+              <option value="creamy">
+                <a class="creamy-navigation-link" href="creamy.html">Сливочное</a>
+              </option>
+            </li>
+            <li class="navigation-item-select">
+              <option value="sherbets">
+                <a class="sherbets-navigation-link" href="sherbets.html">Щербеты</a>
+              </option>
+            </li>
+            <li class="navigation-item-select">
+              <option value="fruit-ice">
+                <a class="fruit-ice-navigation-link" href="fruit-ice.html">Фруктовый лед</a>
+              </option>
+            </li>
+            <li class="navigation-item-select">
+              <option value="melorin">
+                <a class="melorin-navigation-link" href="melorin.html">Мелорин</a>
+              </option>
+            </li>
+            </select>
+          </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-select" href="shipping-and-payment.html">Доставка и оплата</a>
@@ -54,8 +71,8 @@
           <a class="navigation-link" href="#">Вход</a>
         </li>
         <li class="navigation-item">
-          <button class="navigation-link">Корзина пустая
-            <span class="visually-hidden">Корзина</span>
+          <button class="navigation-link">
+            <span class="visually-hidden">2 товара</span>
           </button>
         </li>
       </ul>
@@ -78,6 +95,7 @@
       <h2 class="selected products">Сливочное мороженое</h2>
       </h1>
     </header>
+
     <section class="catalog-products">
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -275,6 +293,7 @@
       </button>
     </section>
   </main>
+
   <footer class="page-footer">
     <section class="footer-contacts">
       <ul class="social-list">
