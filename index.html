@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Shop of ice-cream "Глейси"</title>
-</head>
+  <link rel="stylesheet" href="styles/styles.css" </head>
 
 <body>
   <header class="main header">
@@ -12,39 +12,39 @@
     <nav class="navigation-cite">
       <ul class="navigation-cite-list">
         <li class="navigation-item">
-          <a class="new-navigation-link" href="catalog.html">Каталог</a>
+          <a class="navigation-link" href="catalog.html">Каталог</a>
 
           <ul class="navigation-select">
             <li class="navigation-item-select">
-              <a class="new-navigation-link" href="new.html">Новинки</a>
+              <a class="navigation-link" href="new.html">Новинки</a>
             </li>
             <li class="navigation-item-select">
-              <a class="creamy-navigation-link" href="creamy.html">Сливочное</a>
+              <a class="navigation-link" href="creamy.html">Сливочное</a>
             </li>
             <li class="navigation-item-select">
-              <a class="sherbets-navigation-link" href="sherbets.html">Щербеты</a>
+              <a class="navigation-link" href="sherbets.html">Щербеты</a>
             </li>
             <li class="navigation-item-select">
-              <a class="fruit-ice-navigation-link" href="fruit-ice.html">Фруктовый лед</a>
+              <a class="navigation-link" href="fruit-ice.html">Фруктовый лед</a>
             </li>
             <li class="navigation-item-select">
-              <a class="melorin-navigation-link" href="melorin.html">Мелорин</a>
+              <a class="navigation-link" href="melorin.html">Мелорин</a>
             </li>
           </ul>
         </li>
         <li class="navigation-item">
-          <a class="navigation-select" href="shipping-and-payment.html">Доставка и оплата</a>
+          <a class="navigation-link" href="shipping-and-payment.html">Доставка и оплата</a>
         </li>
-        <li>
-          <a class="navigation-select" href="about.html">О компании</a>
+        <li class="navigation-item ">
+          <a class="navigation-link" href="about.html">О компании</a>
         </li>
       </ul>
       <ul>
         <li class="navigation-list navigation-user navigation contact">
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="contacts-phone navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
         </li>
         <li>
-          <button class="button" type="submit">
+          <button type="submit">
             <span class="visually-hidden">Поиск.</span>
           </button>
           <input type="search">
@@ -52,7 +52,7 @@
           <a class="navigation-link" href="#">Вход</a>
         </li>
         <li class="navigation-item">
-          <button class="navigation-link">
+          <button>
             <span class="visually-hidden">2 товара.</span>
           </button>
         </li>
@@ -63,10 +63,11 @@
   <main class="main-index">
     <h1 class="visually-hidden">Презентующие вкусы мороженого.</h1>
     <section class="announcement">
-      <h2>Нежный пломбир с клубничным джемом</h2>
-      <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для
+      <h2 class="ice-cream-name">Нежный пломбир с клубничным джемом</h2>
+      <p class="taste-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это
+        идеальный десерт для
         всей семьи.</p>
-      <a class="button" href="*">Заказать</a>
+      <button class="button order" href="*">Заказать</button>
       <h2 class="gallery-title">Фотогалерея</h2>
       <img class="slider-image" src="images/ice-cream-3.jpg" alt="Вкусы мороженого." width="327" height="507">
       <button class="slider-button slider-prev" type="button">
@@ -96,7 +97,7 @@
       </ul>
     </section>
     <section class="present">
-      <h2 class="Gifts-for-ice-cream">Заказывайте мороженое и получайте подарки!</h2>
+      <h2 class="gifts-for-ice-cream">Заказывайте мороженое и получайте подарки!</h2>
       <ul class="present-list">
         <li class="present-item">
           <h3 class="present-tittle">Малинка даром</h3>
@@ -121,45 +122,49 @@
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/gallery/gallery.jpg" alt="малиновый вкус" width="168"
               height="168">
-            <h3 class="product-tittle">Малинка</h3>
-            <p class="product-card-discription">Сливочное мороженое с малиновым джемом</p>
           </a>
+          <h3 class="product-tittle">Малинка</h3>
+          <p class="product-card-discription">Сливочное мороженое с малиновым джемом</p>
+
           <b class="product-card-price">310 ₽/кг</b>
-          <a class="product-card-button visually-hidden" href="#">Добавить в корзину.</a>
+          <button class="product-card-button visually-hidden" href="#">Добавить в корзину.</button>
         </li>
         <li class="product-item">
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/gallery/gallery-1.jpg" alt="фисташковый вкус" width="168"
               height="168">
-            <h3 class="product-tittle">Фисташка</h3>
-            <p class="product-card-discription">Фисташковый пломбир с кусочками шоколада</p>
           </a>
+          <h3 class="product-tittle">Фисташка</h3>
+          <p class="product-card-discription">Фисташковый пломбир с кусочками шоколада</p>
+
           <b class="product-card-price">340 ₽/кг</b>
-          <a class="product-card-button visually-hidden" href="#">Добавить в корзину.</a>
+          <button class="product-card-button visually-hidden" href="#">Добавить в корзину.</button>
         </li>
         <li class="product-item">
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/gallery/gallery-2.jpg" alt="черничный вкус" width="168"
               height="168">
-            <h3 class="product-tittle">Черника</h3>
-            <p class="product-card-discription">Крем-брюле с черничным джемом</p>
           </a>
+          <h3 class="product-tittle">Черника</h3>
+          <p class="product-card-discription">Крем-брюле с черничным джемом</p>
+
           <b class="product-card-price">330 ₽/кг</b>
-          <a class="product-card-button visually-hidden" href="#">Добавить в корзину.</a>
+          <button class="product-card-button visually-hidden" href="#">Добавить в корзину.</button>
         </li>
         <li class="product-item">
           <a class="product-card-link" href="product.html">
             <img class="product-card-image" src="images/gallery/gallery-3.jpg" alt="Бабл-гам" width="168" height="168">
-            <h3 class="product-tittle">Бабл-гам</h3>
-            <p class="product-card-discription">Ванильный пломбир со сладкой посыпкой</p>
           </a>
+          <h3 class="product-tittle">Бабл-гам</h3>
+          <p class="product-card-discription">Ванильный пломбир со сладкой посыпкой</p>
+
           <b class="product-card-price">320 ₽/кг</b>
-          <a class="product-card-button visually-hidden" href="#">Добавить в корзину.</a>
+          <button class="product-card-button visually-hidden" href="#">Добавить в корзину.</button>
         </li>
       </ul>
     </section>
     <section class="advantages">
-      <h2 class="own production">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
+      <h2 class="own-production">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного
         производства на развес </h2>
       <ul class="advantages-list">
         <li class="advantages-item">
@@ -181,63 +186,64 @@
       </ul>
     </section>
     <section class="news">
-      <h2 class="blog">Новое в нашем блоге</h2>
-      <a class="article" href="">10 способов сервировки фруктовых щербетов к столу</a>
-      <img class="backstage-image" src="images/ice-cream-plate.jpg" alt="задний план" width="570" height="224">
-      <h2 class="visually-hidden subscription">Рассылка.</h2>
-      <p class="article">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
-        вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email">Email</label>
-        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
-          required>
+      <div class="blog">
+        <h2>Новое в нашем блоге</h2>
+        <a class="article" href="">10 способов сервировки фруктовых щербетов к столу</a>
+      </div>
+      <div class="subscription">
+        <h2 class="visually-hidden">Рассылка.</h2>
+        <p class="mailing-list">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+          вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
+            id="newsletter-email" required>
 
-        <button class="button newsletter-button" type="submit">Отправить</button>
-      </form>
+          <button class="button button-pink newsletter-button" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
-    <section class="delivery">
+    <section class="home-delivery">
       <h2 class="delivery-on-home">Доставка любимого мороженого на дом</h2>
       <p class="delivery-discription">Хочется полакомиться любимым десертом, но нет времени съездить в
         магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-    </section>
-    <section class="confirmation">
-      <h2 class="confirmation-title visually-hidden">Записаться.</h2>
-      <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-      <form class="confirm-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="confirm-form-date">
-          <label class="form-label" for="confirm-date">Дата</label>
-          <input type="text" id="confirm-date" name="confirm-date" placeholder="01.01.2020">
-        </p>
-        <p class="confirm-form-phone">
-          <label for="confirm-phone">Телефон</label>
-          <input type="text" id="confirm-phone" name="confirm-phone" placeholder="+7 800 000-00-00">
-        </p>
-        <p class="confirm-form-address">
-          <label for="confirm-address">Адресс
-          </label>
-          <input type="text" id="confirm-address" name="confirm-address">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <img class="backstage-image" src="images/Delivery.jpg" alt="задний план" width="1170" height="534">
+      <h2 class="confirmation-title visually-hidden">Запись.</h2>
+      <div class="delivery box">
+        <p class="delivery record">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+        <form class="confirm-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="confirm-form-date">
+            <label class="form-label record" for="confirm-date">Дата</label>
+            <input type="text" id="confirm-date" name="confirm-date" placeholder="01.01.2020">
+          </p>
+          <p class="confirm-form-phone">
+            <label for="confirm-phone" class="record">Телефон</label>
+            <input type="text" id="confirm-phone" name="confirm-phone" placeholder="+7 800 000-00-00">
+          </p>
+          <p class="confirm-form-address">
+            <label for="confirm-address" class="record">Адресс
+            </label>
+            <input type="text" id="confirm-address" name="confirm-address">
+          </p>
+          <button class="button button-pink" type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
     <section class="contacts">
       <h2 class="contacts-title visually-hidden">Контакты.</h2>
       <h3 class="contacts-subtitle">Адрес главного офиса и офлайн-магазина:</h3>
       <address class="contacts-address">
         <p class="contacts-address-text">
-          <b>Cанкт-Петербург, набережная реки Карповки, 5, литера П.</b>
+          <b class="address">Cанкт-Петербург, набережная реки Карповки, 5, литера П.</b>
         </p>
       </address>
       <h3 class="contacts-subtitle">Для заказов по телефону:</h3>
       <address class="contacts-address">
-        <a class="contacts-phone" href="tel:+78128121212">
-          <b>+7 812 812-12-12</b>
+        <a class="contacts-phone2" href="tel:+78128121212">
+          <b class="phone">+7 812 812-12-12</b>
         </a>
-        <p>(c 10 до 20 ежедневно)</p>
+        <p class="opening-hours">(c 10 до 20 ежедневно)</p>
       </address>
-      <a class="button button-feedback" href="#">ОФорма обратной связи</a>
-      <img class="backstage-image" src="images/backstage.jpg" alt="задний план" width="1170" height="492">
+      <a class="button button-pink button-feedback" href="#">Форма обратной связи</a>
     </section>
   </main>
   <footer class="page-footer">
@@ -245,17 +251,17 @@
       <h2 class="visually-hidden">Социальные сети.</h2>
       <ul class="social-list">
         <li class="social-item">
-          <a class="button" href="#">
+          <a class="button3" href="#">
             <span class="visually-hidden">Телеграмм.</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="#">
+          <a class="button3" href="#">
             <span class="visually-hidden">ВКонтакте.</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="#">
+          <a class="button3" href="#">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -263,15 +269,15 @@
     </section>
     <section class="useful links">
       <h2 class="visually-hidden">Полезные ссылки.</h2>
-      <a href="*" class=provider-link>
+      <a href="#" class="footer-link footer-link-active">
         <b>Для поставщиков</b></a>
-      <a href="*" class=documents-link>Наши документы</a>
-      <a href="*" class=production-link>О производстве</a>
-      <a href="*" class=standard-link>Экологические стандарты</a>
+      <a href="#" class="footer-link">Наши документы</a>
+      <a href="#" class="footer-link">О производстве</a>
+      <a href="#" class="footer-link">Экологические стандарты</a>
     </section>
     <section>
       <h2 class="visually-hidden">Копирайт.</h2>
-      <p>html academy</p>
+      <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
     </section>
   </footer>
 </body>
