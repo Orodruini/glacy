@@ -138,10 +138,6 @@ body {
   width: 104px;
 }
 
-.product-container {
-  display: flex;
-}
-
 .news {
   display: flex;
   justify-content: space-between;
@@ -169,9 +165,10 @@ body {
   text-align: center;
 }
 
-.present-container {
+.present-list {
   display: flex;
 }
+
 
 .present-item {
   width: 570px;
@@ -187,6 +184,10 @@ body {
 .product-item {
   width: 270px;
   background: #fcfcfc;
+}
+
+.product-list {
+  display: flex;
 }
 
 .product-tittle {
