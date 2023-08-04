@@ -67,6 +67,14 @@ body {
   background-color: #ff2f64;
 }
 
+.button-social {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+}
+
 /* Header*/
 
 .navigation-cite {
@@ -131,8 +139,9 @@ body {
 }
 
 .text-ice-cream {
-  width: 525px;
-  margin: 0 0 0 70px;
+  width: 410px;
+  margin-right: 26px;
+  margin-left: 70px;
 }
 
 .announcement {
@@ -145,9 +154,14 @@ body {
   display: flex;
   justify-content: space-between;
   width: 367px;
+  margin-right: 54px;
 }
 
-
+.cream-images,
+.slider-image {
+  margin-right: 75px;
+  margin-left: 54px;
+}
 
 .slider-image {
   flex-grow: 1;
@@ -156,17 +170,44 @@ body {
 }
 
 .slider-images {
-  margin: auto;
+  margin: 0 auto;
+  margin-right: 0;
 }
 
 .gifts-for-ice-cream {
   width: 434px;
   margin: 0 auto;
+  font-size: 32px;
+}
+
+.page-list {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.button-page {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #fcfcfc;
+}
+
+.slider-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
 }
 
 .social-list {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 0;
   list-style-type: none;
   gap: 16px;
 }
@@ -174,6 +215,8 @@ body {
 .social-list-footer {
   display: flex;
   align-items: flex-start;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   gap: 16px;
 }
@@ -187,11 +230,13 @@ body {
 .news {
   display: flex;
   justify-content: space-between;
+  min-height: 224px;
   margin-bottom: 80px;
 }
 
 .ice-cream-name {
   width: 470px;
+  margin-left: 0;
   font-size: 36px;
   font-weight: 900;
   line-height: 46px;
@@ -199,7 +244,7 @@ body {
 
 .taste-description {
   width: 429px;
-  margin: 24px 0 48px 0;
+  margin: 24px 26px 48px 0;
   font-size: 18px;
   line-height: 24px;
 }
@@ -216,7 +261,7 @@ body {
 .gifts-for-ice-cream,
 .popular-product {
   width: 527px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 46px;
   text-align: center;
@@ -228,15 +273,18 @@ body {
 
 .present-list {
   display: flex;
+  justify-content: space-between;
   margin-top: 55px;
+  margin-bottom: 0;
   margin-left: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 .present-item {
   display: flex;
+  justify-content: space-between;
   width: 570px;
-  margin-right: 30px;
   margin-left: 0;
   border-radius: 16px;
   background: #f79;
@@ -246,19 +294,26 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: space-between;
   width: 317px;
-  height: 196px;
-  padding-left: 36px;
+  min-height: 196px;
+  padding: 36px 0 36px 36px;
+}
+
+.present-discription {
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .present-tittle {
+  margin-top: 0;
+  margin-bottom: 28px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
 }
 
 .product-card-image {
+  margin-bottom: 16px;
   border-radius: 50%;
 }
 
@@ -266,21 +321,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
   width: 270px;
-  height: 281px;
-  padding: 0 51px 16px 51px;
+  padding: 0 40px 24px 40px;
   border-radius: 8px;
   background: #fcfcfc;
+  ;
 }
 
 .product-list {
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
+  padding-left: 0;
   list-style-type: none;
   gap: 30px;
 }
 
 .product-tittle {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -288,6 +348,8 @@ body {
 }
 
 .product-card-discription {
+  margin-top: 0;
+  margin-bottom: 16px;
   text-align: center;
   color: #565c66;
 }
@@ -299,21 +361,21 @@ body {
 }
 
 .advantages {
-  height: 480px;
   margin-bottom: 80px;
-  padding: 0 auto;
+  padding: 24px;
   border-radius: 16px;
   background-image: url('../images/cео.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .advantages-container {
-  height: 432px;
-  margin: 40px;
+  box-sizing: border-box;
+  min-height: 432px;
+  padding: 56px 40px;
   border-radius: 16px;
   background-color: #fff;
   background-repeat: no-repeat;
-  gap: 10px;
 }
 
 .advantages-list {
@@ -322,22 +384,26 @@ body {
 }
 
 .own-production {
+  margin-top: 0;
   margin-bottom: 56px;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
   line-height: 46px;
   text-align: center;
 }
 
 .blog-article {
-  margin: 33px 235px 12px 32px;
+  width: 170px;
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
 }
 
 .blog {
+  box-sizing: border-box;
   width: 570px;
-  height: 224px;
+  padding: 32px;
   font-size: 16px;
   line-height: 20px;
   color: #565c66;
@@ -346,9 +412,9 @@ body {
 }
 
 .article {
+  display: block;
+  box-sizing: border-box;
   width: 303px;
-  height: 92px;
-  margin: 33px 235px 67px 32px;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -357,31 +423,34 @@ body {
 }
 
 .subscription {
+  box-sizing: border-box;
   width: 570px;
+  padding: 6px;
   border-radius: 16px;
   background-image: url('../images/pattern.jpg');
   background-repeat: no-repeat;
 }
 
 .subscription-container {
+  box-sizing: border-box;
   width: 558px;
-  height: 212px;
-  margin: 0 auto;
+  min-height: 212px;
+  padding: 26px;
   border-radius: 16px;
   background-color: #fff;
   background-repeat: no-repeat;
 }
 
 .mailing-list {
-  padding: 26px 26px 42px;
+  margin: 0;
   color: #565c66;
 }
 
 .home-delivery {
   display: flex;
   justify-content: space-between;
-  height: 534px;
   margin-bottom: 80px;
+  padding: 64px;
   border-radius: 16px;
   background-image: url('../images/delivery.png');
   background-repeat: no-repeat;
@@ -390,35 +459,35 @@ body {
 .delivery-container {
   display: flex;
   flex-direction: column;
+  width: 371px;
+  padding: 36px;
 }
 
 .delivery-on-home {
   width: 356px;
-  margin: 167px 160px 24px 100px;
   font-size: 32px;
   font-weight: 900;
   line-height: 46px;
 }
 
 .delivery-discription {
-  margin: 24px 135px 163px 100px;
+  display: block;
+  justify-content: center;
+  margin-top: 0;
+  color: #565c66;
 }
 
 .delivery-record {
-  margin: 40px 80px 32px 40px;
+  width: 380px;
+  margin: 0;
   font-weight: 400;
   color: #565c66;
 }
 
-.delivery-discription {
-  width: 371px;
-  color: #565c66;
-}
-
-
 .delivery-box {
+  box-sizing: border-box;
   width: 500px;
-  height: 406px;
+  padding: 40px;
   border-radius: 8px;
   background-color: #fcfcfc;
   background-repeat: no-repeat;
@@ -430,18 +499,17 @@ body {
 }
 
 .contacts-container {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
   width: 343px;
-  height: 364px;
-  margin: 64px 763px 64px 64px;
+  margin-left: 0;
+  padding: 40px;
   border-radius: 8px;
   background-color: #fcfcfc;
   background-repeat: no-repeat;
 }
 
 .contacts {
-  height: 492px;
+  padding: 64px;
   border-radius: 16px;
   background-image: url('../images/backstage.png');
   background-repeat: no-repeat;
@@ -449,7 +517,8 @@ body {
 
 .contacts-subtitle {
   width: 179px;
-  margin: 40px 124px 12px 40px;
+  margin: 0;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
   color: #565c66;
@@ -457,7 +526,9 @@ body {
 
 .contacts-subtitle-phone {
   width: 203px;
-  margin: 24px 100px 12px 40px;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
   color: #565c66;
@@ -465,9 +536,7 @@ body {
 
 .contacts-address-text {
   width: 263px;
-  margin-right: 40px;
-  margin-bottom: 24px;
-  margin-left: 40px;
+  margin-bottom: 32px;
 }
 
 .contacts-address {
@@ -482,11 +551,9 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1170px;
-  height: 153px;
   margin: 0 auto;
-  margin-bottom: 0;
   padding-top: 48px;
-  padding-bottom: 0;
+  padding-bottom: 48px;
 }
 
 .footer-contacts {
@@ -525,7 +592,9 @@ body {
 }
 
 .opening-hours {
+  margin: 0;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
   color: #565c66;
 }
@@ -596,6 +665,5 @@ body {
 
 .pagination-container {
   display: flex;
-  height: 126px;
   margin-bottom: 40px;
 }
