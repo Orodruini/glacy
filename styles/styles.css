@@ -326,7 +326,6 @@ body {
   padding: 0 40px 24px 40px;
   border-radius: 8px;
   background: #fcfcfc;
-  ;
 }
 
 .product-list {
@@ -569,6 +568,7 @@ body {
 }
 
 .button-feedback {
+  display: block;
   align-items: center;
   justify-content: center;
   padding: 12px 32px;
@@ -593,6 +593,7 @@ body {
 
 .opening-hours {
   margin: 0;
+  margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -639,16 +640,11 @@ body {
 }
 
 .catalog-filter {
-  display: flex;
-  width: 823px;
+  width: 196px;
 }
 
 .about-text {
   font-size: 12px;
-}
-
-.main-inner {
-  padding-top: 32px;
 }
 
 .selected-products {
@@ -666,4 +662,12 @@ body {
 .pagination-container {
   display: flex;
   margin-bottom: 40px;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.catalog-filter-group {
+  flex-grow: 1;
 }
