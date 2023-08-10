@@ -60,7 +60,6 @@
           </button>
         </li>
       </ul>
-
     </nav>
   </header>
   <main class="main-inner main-container">
@@ -80,16 +79,16 @@
         </ul>
         <h2 class="selected-products">Сливочное мороженое</h2>
       </header>
-
       <section class="catalog-products">
         <h2 class="visually-hidden">Фильтр.</h2>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Сортировка</legend>
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Сортировка</legend>
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">по популярности</option>
             </select>
-        </fieldset>
+          </fieldset>
+        </form>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность</legend>
           <ul class="catalog-filter-list">
@@ -117,7 +116,6 @@
                 выше 30%
               </label>
             </li>
-
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
@@ -156,7 +154,6 @@
           </ul>
         </fieldset>
         <button class="button" type="submit">Применить</button>
-        </form>
       </section>
       <section class="product">
         <ul class="product-list">
