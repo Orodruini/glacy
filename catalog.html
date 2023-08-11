@@ -60,7 +60,6 @@
           </button>
         </li>
       </ul>
-
     </nav>
   </header>
   <main class="main-inner main-container">
@@ -78,15 +77,17 @@
             <a class="breadcrumbs-link page">Сливочное мороженое</a>
           </li>
         </ul>
-        <h2 class="selected products">Сливочное мороженое</h2>
+        <h2 class="selected-products">Сливочное мороженое</h2>
       </header>
-
       <section class="catalog-products">
         <h2 class="visually-hidden">Фильтр.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">по популярности</option>
-          </select>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Сортировка</legend>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">по популярности</option>
+            </select>
+          </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность</legend>
             <ul class="catalog-filter-list">
@@ -114,7 +115,6 @@
                   выше 30%
                 </label>
               </li>
-
             </ul>
           </fieldset>
           <fieldset class="catalog-filter-group">
@@ -301,34 +301,36 @@
             </button>
           </li>
         </ul>
-        <a class="button" href="#">Показать еще</a>
-        <h2 class="gallery-title">Страницы</h2>
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущая страница.</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующая страница.</span>
-        </button>
+        <div class="pagination-container">
+          <a class="button" href="#">Показать еще</a>
+          <h2 class="gallery-title visually-hidden">Страницы</h2>
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущая страница.</span>
+          </button>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующая страница.</span>
+          </button>
+        </div>
       </section>
     </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
       <section class="footer-contacts">
-        <h2 class="visually-hidden">Социальные сети. </h2>
-        <ul class="social-list">
+        <h2 class="visually-hidden">Социальные сети.</h2>
+        <ul class="social-list-footer">
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="#">
               <span class="visually-hidden">Телеграмм.</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="#">
               <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="button-social" href="#">
               <span class="visually-hidden">Ютуб.</span>
             </a>
           </li>
