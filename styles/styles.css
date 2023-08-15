@@ -329,12 +329,12 @@ body {
 }
 
 .product-list {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  padding-left: 0;
+  display: grid;
+  margin-bottom: 16px;
+  padding: 0;
   list-style-type: none;
-  gap: 30px;
+  gap: 40px 30px;
+  grid-template-columns: repeat(4, 270px);
 }
 
 .product-tittle {
@@ -442,6 +442,7 @@ body {
 
 .mailing-list {
   margin: 0;
+  margin-bottom: 42px;
   color: #565c66;
 }
 
@@ -479,6 +480,7 @@ body {
 .delivery-record {
   width: 380px;
   margin: 0;
+  margin-bottom: 32px;
   font-weight: 400;
   color: #565c66;
 }
@@ -640,6 +642,7 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
   width: 196px;
 }
 
@@ -666,8 +669,42 @@ body {
 
 .catalog-products {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 46px;
 }
 
 .catalog-filter-group {
   flex-grow: 1;
+}
+
+.confirm-form {
+  display: grid;
+  margin-bottom: 32px;
+  grid-template-columns: 117px 287px;
+  gap: 20px 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.confirm-form-address {
+  grid-column: 1 / -1;
+}
+
+.delivery-button {
+  margin-left: 134px;
+}
+
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product-card-link {
+  display: flex;
+  justify-content: center;
 }
