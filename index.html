@@ -259,21 +259,26 @@
         <h2 class="confirmation-title visually-hidden">Запись.</h2>
         <div class="delivery-box">
           <p class="delivery-record">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <form class="confirm-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="confirm-form-date">
-              <label class="form-label record" for="confirm-date">Дата</label>
+          <form class="confirm-form " action="https://echo.htmlacademy.ru/" method="post">
+            <p class="confirm-form-date field-group">
+              <label class="form-label record" for="confirm-date">Дата
+              </label>
+              <button class="info" type="button">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
               <input type="text" id="confirm-date" name="confirm-date" placeholder="01.01.2020">
             </p>
-            <p class="confirm-form-phone">
-              <label for="confirm-phone" class="record">Телефон</label>
+            <p class="confirm-form-phone field-group">
+              <label for="confirm-phone" class="record">Телефон
+              </label>
               <input type="text" id="confirm-phone" name="confirm-phone" placeholder="+7 800 000-00-00">
             </p>
-            <p class="confirm-form-address">
-              <label for="confirm-address" class="record">Адресс
-              </label>
+            <p class="confirm-form-address field-group">
+              <label for="confirm-address" class="record">Адресс</label>
+              <button class="info">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
               <input type="text" id="confirm-address" name="confirm-address">
             </p>
-            <button class="button button-pink" type="submit">Отправить</button>
+            <button class="button button-pink delivery-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -330,7 +335,8 @@
       </section>
       <section>
         <h2 class="visually-hidden">Копирайт.</h2>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> ©
+          2021 </p>
       </section>
     </div>
   </footer>
