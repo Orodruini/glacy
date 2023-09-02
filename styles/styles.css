@@ -1037,7 +1037,7 @@ body {
   background-color: #ff2f64;
 }
 
-other-taste-yellow .footer-link-heart {
+.footer-link-heart {
   display: flex;
   font-weight: 700;
   gap: 8px;
@@ -1109,8 +1109,11 @@ other-taste-yellow .footer-link-heart {
   background-color: #feafc3;
 }
 
+.slider-prev svg {
+  transform: rotate(180deg);
+}
+
 .slider-next {
-  transform: scaleY(-1);
   border: none;
   border-radius: 50%;
   background-color: #feafc3;
