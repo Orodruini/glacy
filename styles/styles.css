@@ -1223,10 +1223,6 @@ body {
   display: flex;
 }
 
-fieldset {
-  border: none;
-}
-
 .select-control {
   width: 196px;
   opacity: .3;
