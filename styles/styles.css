@@ -66,6 +66,7 @@ body {
 }
 
 .button-settings {
+  align-self: flex-end;
   box-sizing: border-box;
   padding: 8px 32px;
   font-size: 14px;
@@ -890,14 +891,22 @@ body {
 
 .catalog-filter-list {
   display: flex;
+  width: 604px;
   padding: 0;
   list-style-type: none;
+  border-radius: 18px;
+  background: rgba(252, 252, 252, .30);
   gap: 16px;
+}
+
+.catalog-filter-list-percent {
+  border-radius: 18px;
+  background: rgba(252, 252, 252, .30);
 }
 
 .main-footer {
   display: flex;
-  width: 682px;
+  width: 680px;
   margin-bottom: 40px;
   margin-left: auto;
   padding: 40px 0;
@@ -913,11 +922,6 @@ body {
 }
 
 .navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   fill: #dbdbdb;
 }
@@ -1058,17 +1062,14 @@ body {
   margin-left: 24px;
 }
 
-.other-taste-yellow {
+.other-taste {
   position: relative;
   display: flex;
   width: 100px;
-  margin: auto 41px auto 37px;
 }
 
-.other-taste-pink {
-  position: relative;
-  display: flex;
-  width: 100px;
+.other-taste-yellow {
+  margin: auto 41px auto 37px;
 }
 
 .other-taste::before {
@@ -1145,12 +1146,10 @@ body {
 
 .page-catalog:focus {
   outline: 1px solid #2d3440;
-  background: 24px;
   background-color: #fec7d5;
 }
 
 .page-catalog:current {
-  background: 24px;
   background-color: #dbdbdb;
 }
 
@@ -1218,4 +1217,19 @@ body {
   border: none;
   border-radius: 50%;
   background-color: #feb8ca;
+}
+
+.price {
+  display: flex;
+}
+
+fieldset {
+  border: none;
+}
+
+.select-control {
+  width: 196px;
+  opacity: .3;
+  border-radius: 20px;
+  background: #fcfcfc;
 }
