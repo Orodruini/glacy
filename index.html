@@ -23,10 +23,12 @@
                 clip-rule="evenodd" />
             </svg>
           </a>
-          <ul class="navigation-select visually-hidden">
+          <ul class="navigation-select">
             <li class="navigation-item-select">
-              <a class="navigation-link-catalog" href="new.html">Новинки</a>
+              <a class="navigation-link-catalog" href="new.html"><b>Новинки</b></a>
             </li>
+            <div class="container-header-delimiter">
+            </div>
             <li class="navigation-item-select">
               <a class="navigation-link-catalog" href="creamy.html">Сливочное</a>
             </li>
@@ -62,7 +64,11 @@
             </svg>
             <span class="visually-hidden">Поиск.</span>
           </button>
-          <input class="visually-hidden" type="text">
+          <div class="popover-search">
+            <div class="popover-search-container">
+              <input class="field field-search" type="text" id="search" name="search" placeholder="Поиск по сайту">
+            </div>
+          </div>
         </li>
         <li class="enter">
           <a class="navigation-links navigation-link-login" href="#"><svg class="navigation-icon" aria-hidden="true"
@@ -72,6 +78,34 @@
                 clip-rule="evenodd" />
             </svg>Вход
           </a>
+          <div class="popover-enter">
+            <section class="modal-content">
+              <h2 class="modal-title">Личный кабинет</h2>
+            </section>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group-enter">
+                <label class="visually-hidden" for="auth-login">Логин</label>
+                <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                  placeholder="email@example.com">
+              </p>
+              <p class="field-group-enter">
+                <label class="visually-hidden" for="auth-password">Пароль</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password"
+                  placeholder="Пароль">
+              </p>
+              <div class="container-enter">
+                <button class="button-pink auth-form-button" type="submit">Войти</button>
+                <div class="container-enter-button">
+                  <p class="field-group auth-form-user-options">
+                    <a class="auth-form-recovery" href="#">Забыл пароль</a>
+                  </p>
+                  <p class="field-group auth-form-user-options">
+                    <a class="auth-form-recovery" href="#">Регистрация</a>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
         </li>
         <li class="navigations">
           <button class="navigation-links ">
@@ -83,6 +117,59 @@
             </svg>
             <span class="visually-hidden">2 товара.</span>
           </button>
+          <div class="popover">
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <img class="product-card-image-popover" src="images/gallery/rasberry-mini.png" alt="малиновый вкус."
+                    width="46" height="46">
+                  <div class="popover-container">
+                    <h3 class="product-tittle-popover">Малинка</h3>
+                    <p class="product-card-weight">1 кг х 310 ₽</p>
+                  </div>
+                  <b class="product-card-price-popover">310 ₽</b>
+                  <button class="popover-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <span class="visually-hidden">Добавить в корзину.</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <img class="product-card-image-popover" src="images/gallery/bubble-gum.png" alt="малиновый вкус."
+                    width="46" height="46">
+                  <div class="popover-container">
+                    <h3 class="product-tittle-popover">Малинка</h3>
+                    <p class="product-card-weight">1 кг х 310 ₽</p>
+                  </div>
+                  <b class="product-card-price-popover">310 ₽</b>
+                  <button class="popover-button" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    <span class="visually-hidden">Добавить в корзину.</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="line"></div>
+              <div class="price-container">
+                <a type="button" class="button-pink">Оформить заказ
+                  <span class="visually-hidden">Оформить заказ.</span>
+                </a>
+                <h3 class="final-price">Итого: 790 ₽</h3>
+              </div>
+            </div>
+          </div>
+          <div class="popover-empty">
+            <div class="popover-content-empty">
+              <h2 class="popover-title-empty">Ваша корзина пока пуста</h2>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -101,7 +188,7 @@
         </div>
         <h2 class="gallery-title visually-hidden">Фотогалерея</h2>
         <div class="visible-ice-cream">
-          <button class="slider-button slider-button-left" type="submit">
+          <button class="slider-button slider-button-prev" type="submit">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none" viewBox="0 0 17 16">
               <path fill="#FCFCFC" fill-rule="evenodd"
                 d="M9.71 13.135a.665.665 0 0 0 .94-.94l-4.2-4.201 4.2-4.202a.665.665 0 0 0-.94-.94L5.042 7.52l-.003.003c-.26.26-.26.681 0 .94l4.671 4.672Z"
@@ -110,7 +197,7 @@
             <span class="visually-hidden">Предыдущее фото.</span>
           </button>
           <img class="slider-image" src="images/ice-cream-3.png" alt="Вкусы мороженого." width="327" height="507">
-          <button class="slider-button slider-button-right" type="button">
+          <button class="slider-button slider-button-next" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
               <path fill="#FCFCFC" fill-rule="evenodd"
                 d="M7.135 2.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94l4.669-4.669.003-.002c.26-.26.26-.681 0-.94L7.135 2.864Z"
@@ -127,23 +214,23 @@
           <img class="slider-images" src="images/ice-cream.png" alt="Вкусы мороженого." width="66" height="150">
         </div>
         <div class="slider-footer">
-          <ul class="page-list">
-            <li>
-              <button class="button-page" type="button">
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">1 слайд.</span>
               </button>
             </li>
-            <li>
-              <button class="button-page" type="button">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">2 слайд.</span>
               </button>
             </li>
-            <li>
-              <button class="button-page" type="button">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">3 слайд.</span>
               </button>
             </li>
-          </ul>
+          </ol>
           <ul class="social-list">
             <li class="social-item">
               <a class="button-social button-social-tg" href="#">
@@ -308,7 +395,7 @@
             <p class="mailing-list">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
               вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email">Email</label>
+              <label class="visually-hidden" for="newsletter-email">Email</label>
               <input class="field" placeholder="email@example.com" type="email" name="newsletter-email"
                 id="newsletter-email" required>
               <button class="button-pink button-sub" type="submit">Отправить</button>
@@ -327,10 +414,23 @@
           <p class="delivery-record">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="confirm-form " action="https://echo.htmlacademy.ru/" method="post">
             <p class="confirm-form-date field-group">
-              <label class="form-label record" for="confirm-date">Дата
-              </label>
-              <button class="info" type="button">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+              <span class="form-label form-label-icon">
+                <label class="form-label record" for="confirm-date">Дата
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-button" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                      viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы
+                    свяжемся с вами для подтверждения
+                    заказа</span>
+                </span>
+              </span>
               <input class="field" type="text" id="confirm-date" name="confirm-date" placeholder="01.01.2020">
             </p>
             <p class="confirm-form-phone field-group">
@@ -339,9 +439,23 @@
               <input class="field" type="text" id="confirm-phone" name="confirm-phone" placeholder="+7 800 000-00-00">
             </p>
             <p class="confirm-form-address field-group">
-              <label for="confirm-address" class="record">Адресс</label>
-              <button class="info">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span></button>
+              <span class="form-label form-label-icon">
+                <label class="form-label record" for="confirm-date">Адрес
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-button" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"
+                      viewBox="0 0 16 16">
+                      <path fill="#2D3440" fill-rule="evenodd"
+                        d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z"
+                        clip-rule="evenodd">
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы
+                    свяжемся с вами для подтверждения
+                    заказа</span>
+                </span>
+              </span>
               <input class="field" type="text" id="confirm-address" name="confirm-address">
             </p>
             <button class="button-pink delivery-button" type="submit">Отправить</button>
@@ -417,11 +531,43 @@
       </section>
       <section>
         <h2 class="visually-hidden">Копирайт.</h2>
+        <img class="logo" alt="Логотип Gllacy shop»." src="images/html-logo.svg" width="93" height="27">
         <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> ©
           2021 </p>
       </section>
     </div>
   </footer>
+  <div class="modal-container modal-close">
+    <div class="modal modal-feedback">
+      <button class="modal-close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+          <path fill="#2D3440" fill-rule="evenodd"
+            d="M12.803 4.138a.667.667 0 1 0-.943-.943L8 7.056l-3.862-3.86a.667.667 0 1 0-.943.942L7.056 8l-3.86 3.861a.667.667 0 1 0 .942.943L8 8.942l3.861 3.861a.667.667 0 1 0 .943-.943L8.942 8l3.861-3.862Z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-groups">
+            <label class="visually-hidden" for="auth-login">Имя и фамилия</label>
+            <input class="name field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+          </p>
+          <p class="field-groups">
+            <label class="visually-hidden" for="auth-password">Пароль</label>
+            <input class="email-field field" type="text" id="confirm-address" name="confirm-address"
+              placeholder="email@example.com">
+          </p>
+          <p class="field-groups">
+            <label class="visually-hidden" for="auth-password">В свободной форме</label>
+            <textarea class="feedback-form-field field" type="text" id="auth-text" name="feedback-form-field"
+              placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button-pink button-modal" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
 </body>
 
 </html>
