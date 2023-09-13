@@ -277,7 +277,7 @@ body {
   background-color: #fdd5df;
 }
 
-.navigation-links:focus {
+.navigations .navigation-links:focus {
   outline: 2px solid #000;
   background-color: #fdd5df;
 }
@@ -968,11 +968,6 @@ body {
   padding: 40px 0;
 }
 
-.logo {
-  width: 93px;
-  height: 27px;
-}
-
 .htmlacademy-link {
   text-decoration: underline;
   color: #2d3440;
@@ -1214,6 +1209,12 @@ body {
 }
 
 .navigation-link:focus {
+  border-radius: 30px;
+  outline: 2px solid #2d3440;
+  background-color: rgb(252, 213, 223);
+}
+
+.navigation-item-select .navigation-link:focus {
   border-radius: 30px;
   outline: 2px solid #2d3440;
   background-color: rgb(252, 213, 223);
@@ -1859,10 +1860,6 @@ body {
 
 .popover-enter {
   width: 420px;
-}
-
-.enter {
-  position: relative;
 }
 
 .container-enter {
