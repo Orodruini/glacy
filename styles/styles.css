@@ -241,7 +241,7 @@ body {
   fill: #fcfcfc;
 }
 
-.focus-within:focus-within path {
+.focus-within:focus-within .navigation-links~path {
   fill: #fcfcfc;
 }
 

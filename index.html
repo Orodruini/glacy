@@ -62,12 +62,12 @@
             </svg>
             <span class="visually-hidden">Поиск.</span>
           </button>
-          <form>
-            <div class="popover-search">
+          <div class="popover-search">
+            <form>
               <label class="visually-hidden" for="search">Поиск по сайту.</label>
               <input class="field field-search" type="search" id="search" name="search" placeholder="Поиск по сайту">
-            </div>
-          </form>
+            </form>
+          </div>
         </li>
         <li class="navigations focus-within">
           <a class="navigation-links navigation-link-login" href="#"><svg class="navigation-icon" aria-hidden="true"
@@ -405,7 +405,7 @@
                 <label class="form-label record" for="confirm-date">Дата
                 </label>
                 <span class="tooltip">
-                  <button class="tooltip-button" type="button"></button>
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы
                     свяжемся с вами для подтверждения
                     заказа</span>
@@ -423,7 +423,7 @@
                 <label class="form-label record" for="confirm-date">Адрес
                 </label>
                 <span class="tooltip">
-                  <button class="tooltip-button" type="button"></button>
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы
                     свяжемся с вами для подтверждения адреса</span>
                 </span>
@@ -540,12 +540,12 @@
             <input class="name field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
           </p>
           <p class="field-groups">
-            <label class="visually-hidden" for="auth-password">Введите пароль.</label>
+            <label class="visually-hidden" for="auth-login">Введите почту.</label>
             <input class="email-field field" type="email" id="confirm-address" name="confirm-address"
               placeholder="email@example.com">
           </p>
           <p class="field-groups">
-            <label class="visually-hidden" for="auth-password">Введите отзыв, в свободной форме.</label>
+            <label class="visually-hidden" for="auth-text">Введите отзыв, в свободной форме.</label>
             <textarea class="feedback-form-field field" type="text" id="auth-text" name="feedback-form-field"
               placeholder="В свободной форме"></textarea>
           </p>

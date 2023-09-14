@@ -62,12 +62,12 @@
             </svg>
             <span class="visually-hidden">Поиск.</span>
           </button>
-          <form>
-            <div class="popover-search">
+          <div class="popover-search">
+            <form>
               <label class="visually-hidden" for="search">Поиск по сайту.</label>
               <input class="field field-search" type="search" id="search" name="search" placeholder="Поиск по сайту">
-            </div>
-          </form>
+            </form>
+          </div>
         </li>
         <li class="navigations focus-within">
           <a class="navigation-links navigation-link-login focus-within" href="#">
@@ -151,7 +151,7 @@
               </li>
             </ul>
             <div class="price-container">
-              <a type="button" class="button-pink">Оформить заказ
+              <a class="button-pink">Оформить заказ
               </a>
               <h3 class="final-price">Итого: 790 ₽</h3>
             </div>
@@ -217,15 +217,14 @@
             <ul class="catalog-filter-list-percent">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="0%" disabled>
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="0%">
                   <span class="control-marks"></span>
                   <span class="control-label">0%</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="10%" checked
-                    disabled>
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="10%" checked>
                   <span class="control-marks"></span>
                   <span class="control-label">до 10%</span>
                 </label>
@@ -251,7 +250,7 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" disabled checked>
+                  <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">шоколадные</span>
                 </label>
@@ -265,7 +264,7 @@
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="checkbox" name="fruits" disabled>
+                  <input class="visually-hidden control-input" type="checkbox" name="fruits">
                   <span class="control-mark"></span>
                   <span class="control-label">фрукты</span>
                 </label>
