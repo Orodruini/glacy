@@ -149,7 +149,7 @@
               </li>
             </ul>
             <div class="price-container">
-              <a type="button" class="button-pink">Оформить заказ
+              <a class="button-pink" href="#">Оформить заказ
               </a>
               <h3 class="final-price">Итого: 790 ₽</h3>
             </div>
@@ -424,7 +424,7 @@
                 </label>
                 <span class="tooltip">
                   <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date"></button>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите желаемую дату и время и мы
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-adress">Укажите желаемую дату и время и мы
                     свяжемся с вами для подтверждения адреса</span>
                 </span>
               </span>
@@ -537,22 +537,23 @@
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="field-groups">
             <label class="visually-hidden" for="auth-login">Введите имя и фамилию.</label>
-            <input class="name field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+            <input class="name field" type="text" id="auth-login-modal" name="auth-login" placeholder="Логин">
           </p>
           <p class="field-groups">
             <label class="visually-hidden" for="auth-login">Введите почту.</label>
-            <input class="email-field field" type="email" id="confirm-address" name="confirm-address"
+            <input class="email-field field" type="email" id="confirm-address-modal" name="confirm-address"
               placeholder="email@example.com">
           </p>
           <p class="field-groups">
             <label class="visually-hidden" for="auth-text">Введите отзыв, в свободной форме.</label>
-            <textarea class="feedback-form-field field" type="text" id="auth-text" name="feedback-form-field"
+            <textarea class="feedback-form-field field" id="auth-text" name="feedback-form-field"
               placeholder="В свободной форме"></textarea>
           </p>
           <button class="button-pink button-modal" type="submit">Отправить</button>
         </form>
       </section>
     </div>
+  </div>
 </body>
 
 </html>
